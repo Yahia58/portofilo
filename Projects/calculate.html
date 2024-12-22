@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background: #fafafa;
+        }
+        .main{  
+              box-shadow: 0 5px 25px rgba(250, 247, 247, 60%);   
+            border-radius: 15px;
+        background: #FFFFFF;
+        text-align: center;
+        width: 310px;
+        margin: 80px auto;
+        padding: 30px;
+        }
+        form{
+            padding: 0 5px;
+            margin-bottom: 15px;
+        }
+        .textview{
+            border: 3px solid #fafafa;
+            box-shadow: 0 5px 25px rgba(#fcfcfc  60%);   
+                  border-radius: 5px;
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            pointer-events: none;
+        }
+        .clearfix:before, .clearfix:after{
+            content: '';
+            display: table;
+            clear: both;
+            width: 100%;
+
+        }
+        .col-3{
+            width: 25%;
+            padding: 0 5px;
+            float: left;
+        }
+        .col-6{
+            width: 50%;
+            padding: 0 5px;
+            float: left;
+        }
+        .button{
+            
+            border-radius: 7px;
+            box-shadow: 0 5px 25px rgba(250, 247, 247, 30%);
+            width: 100%;
+            height: 30px;
+            outline: none;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 1em;
+    transition: 0.7s ease;
+}
+.buttonn{
+      
+    border-radius: 7px;
+            box-shadow: 0 5px 25px rgba(250, 247, 247, 30%);
+            width: 100%;
+            height: 30px;
+            outline: none;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 1em;
+    transition: 0.7s ease;
+}
+.buttonn:hover{
+    transform: scale(1.1);     
+}
+        .button:hover{
+            transform: scale(1.1);       }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <form name="form">
+        <input type="text" name="textview"class="textview">
+    </form>
+
+        <div class="clearfix">
+            <div class="col-3"><input type="button"style="color:#fff;background-color:red;border-color: red;"onclick="clean();" value="C" class="button"></div>
+            <div class="col-3"><input type="button"style="color:#fff;background-color:black;" value="&#8756;" class="button"></div>
+            <div class="col-3"><input type="button" style="color:#fff;background-color:black;"onclick="back();"value="Del" class="button"></div>
+            <div class="col-3"><input type="button"style="color:#fff;background-color:black;"  value="&#247;" class="button"onclick="insert('/');"></div>            
+            <div class="col-3"><input  hidden type="button" style="color:#fff;background-color:black;"value="(" class="buttonn"onclick="insert('(');"></div>
+            <div class="col-3"><input hidden type="button" style="color:#fff;background-color:black;"value="%" class="buttonn"onclick="insert('%');"></div>
+           </div>
+        <div class="clearfix">
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="7" onclick="insert(7);" class="button"></div>
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="8"onclick="insert(8);"  class="button"></div>
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="9" onclick="insert(9);" class="button"></div>
+            <div class="col-3"><input type="button"style="color:#fff;background-color:black;" value="&#215;" class="button"onclick="insert('*');"></div>
+      
+            <div class="col-3"><input hidden  type="button" style="color:#fff;background-color:black;"value=")" class="buttonn"onclick="insert(')');"></div>
+            <div class="col-3"><input hidden  type="button" style="color:#fff;background-color:black;"value="tan" class="buttonn"onclick="insert('tan');"></div>
+        </div>  <div class="clearfix">
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="4"onclick="insert(4);"  class="button"></div>
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="5"onclick="insert(5);"  class="button"></div>
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="6"onclick="insert(6);"  class="button"></div>
+            <div class="col-3"><input type="button" style="color:#fff;background-color:black;"value="&#8722;" class="button"onclick="insert('-');"></div>
+       
+        <div class="col-3"><input hidden  type="button" style="color:#fff;background-color:black;"value="^" class="buttonn"onclick="insert('^');"></div>
+        <div class="col-3"><input hidden  type="button" style="color:#fff;background-color:black;"value="cot" class="buttonn"onclick="insert('cot');"></div>
+    </div>  <div class="clearfix">
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="1"onclick="insert(1);"  class="button"></div>
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="2" onclick="insert(2);" class="button"></div>
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="3"onclick="insert(3);"  class="button"></div>
+            <div class="col-3"><input type="button"style="color:#fff;background-color:black;" value="&#43;" class="button"onclick="insert('+');"></div>
+           
+            <div class="col-3"><input hidden type="button" style="color:#fff;background-color:black;"value="sin" class="buttonn"onclick="insert('sin');"></div>
+            <div class="col-3"><input hidden type="button" style="color:#fff;background-color:black;"value="sec" class="buttonn"onclick="insert('sec');"></div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="."onclick="insert('.');"  class="button"></div>
+            <div class="col-3"><input type="button"style="border-color: #FFFFFF;" value="0" onclick="insert(0);" class="button"></div>
+            <div class="col-6"><input type="button"style="color:#fff;background-color:black;" value="&#61;"onclick="equal();" class="button"></div>
+
+            <div class="col-3"><input hidden type="button" style="color:#fff;background-color:black;"value="cos" class="buttonn"onclick="insert('cos');"></div>
+            <div class="col-3"><input hidden type="button" style="color:#fff;background-color:black;"value="cosec" class="buttonn"onclick="insert('cosec');"></div>
+   
+          
+        </div>
+<b class="more" style="float: right;" >more</b>
+<b hidden class="less"style="float: right;" >less</b>
+    </div> <script src="هةل/jquery-3.6.0.min.js"></script>
+    <script src="calculate.js"></script>   
+   
+</body>
+</html>
