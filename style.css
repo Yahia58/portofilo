@@ -43,7 +43,7 @@ section{
    /* min-height: 100vh;*/
     display: flex;
     align-items: center;
-background-image: url(	IMG_20220923_185058_74.jpg);
+background-image: url(	me.png);
     
      
     background-repeat: no-repeat;
@@ -460,8 +460,8 @@ content{
 padding: 80px 20px;
 }
 .mainsec{ 
-    height: 1401px;
-    
+    height: auto;
+    background-size: 40% 50%;
 }
 .mainsec h2{
 font-size: 1em;
