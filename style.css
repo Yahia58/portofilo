@@ -474,9 +474,7 @@ font-size: 1em;
 }.card .icons{
     font-size: 5em;
         }
-        .ssjj{
-           margin-top:18%;
-        }      
+              
 }
 
 @media (max-width:641px){
@@ -484,7 +482,7 @@ font-size: 1em;
         font-size: 12px;
     }
     .mainsec{ 
-        height: 501px;
+        height: auto;
         
     }
     .mainsec h2{
