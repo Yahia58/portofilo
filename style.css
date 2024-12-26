@@ -462,6 +462,7 @@ padding: 80px 20px;
 .mainsec{ 
     height: auto;
     background-size: 50% 50%;
+    
 }
 .mainsec h2{
 font-size: 1em;
@@ -473,8 +474,7 @@ font-size: 1em;
     width: 15em;
 }.card .icons{
     font-size: 5em;
-        }
-              
+        }  
 }
 
 @media (max-width:641px){
