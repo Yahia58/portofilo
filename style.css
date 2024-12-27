@@ -43,7 +43,7 @@ section{
    /* min-height: 100vh;*/
     display: flex;
     align-items: center;
-background-image: url(	me.png);
+background-image: url(	mm.png);
     
      
     background-repeat: no-repeat;
@@ -96,8 +96,10 @@ background-image: url(	me.png);
 
  .main-btn1{
     color: rgb(29, 56, 233); 
-    background-image: url(cv.jpg);background-size: cover;
-    text-decoration: none;
+  /*  background-image: url(cv.jpg);background-size: cover;
+  */
+  background-color: white;
+  text-decoration: none;
     font-size: 1.5em;
     font-weight: 600;
        letter-spacing: 1px;
