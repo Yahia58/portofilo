@@ -494,6 +494,7 @@ padding: 50px 20px;
     position: relative; /* ضمان التحكم في مكانها */
       /* إضافة مسافة بعد الصورة لتجنب التصاق العناصر التالية */
     display: block;  
+    background-size: 30% 30%;
 }
 .mainsec h2{
 font-size: 1em;
