@@ -479,7 +479,7 @@ padding: 50px 20px;
 .mainsec{ 
     height: auto;
     background-image: none;
-    background-size: 30% 30%;
+    background-size: 45% 30%;
      /* Ensure it covers the entire area */
         background-position: right;
         background-attachment: fixed; /* Keep it fixed */
