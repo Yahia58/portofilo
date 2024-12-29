@@ -350,7 +350,7 @@ justify-content: space-between;
     font-family: Arial, sans-serif;
     border-radius: 10px; /* Rounded corners */
     margin: 20px 20px;
-    width: 50%; /* Width is 80% of the screen */
+    width: 65%; /* Width is 80% of the screen */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
@@ -371,35 +371,7 @@ justify-content: space-between;
   
   #college-info p {
     margin: 10px 0;
-  }
-  .Colla{
-    padding: 40px;
-    background-color: #f5f5f5; /* Light background color */
-    color: #333; /* Text color */
-    font-family: Arial, sans-serif;
-    border-radius: 10px; /* Rounded corners */
-    margin: 10px 1%;
-    width: 55%; /* Width is 80% of the screen */
-     
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
-     
-    text-align: center ;
-  margin-bottom: 20px;
-  margin-top:20px;
-  transition: 0.7s ease;
-  }
-  .Colla:hover{
-    
-    transform: scale(1.1);
-  }
-  #Colla h2 {
-    margin-bottom: 20px;
-    color: #02024e; /* Main color for the heading */
-  }
-  
-  #Colla p {
-    margin: 10px 0;
-  }
+  } 
   .cardColla{
     width: 15em;
 }
@@ -474,27 +446,24 @@ content{
     font-size: 1.8em;
 }
 .section{
-padding: 50px 20px;
+padding: 10px 20px;
 }
 .mainsec{ 
     height: auto;
     background-image: none;
-    background-size: 45% 30%;
-     /* Ensure it covers the entire area */
-        background-position: right;
-        background-attachment: fixed; /* Keep it fixed */
+    
     
     
 } 
 .ssjj{
-    background-image: url(me.png);
+    background-image: url(m3.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-attachment: fixed; /* Keep it fixed */
     position: relative; /* ضمان التحكم في مكانها */
       /* إضافة مسافة بعد الصورة لتجنب التصاق العناصر التالية */
     display: block;  
-    background-size: 30% 30%;
+    background-size: 50% auto;
 }
 .mainsec h2{
 font-size: 1em;
@@ -508,10 +477,7 @@ font-size: 1em;
     font-size: 5em;
         }  
         
-.Colla{
-    padding: 10px;
-    margin: 5px 1%;
-    }
+ 
     .cardColla{
         width: 17.25em;
     padding: 15px;
